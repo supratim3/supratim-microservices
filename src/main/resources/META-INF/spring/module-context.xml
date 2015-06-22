@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="
+    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+    http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd">
+
+<!-- Import the standard items for an SPF Component -->
+       
+<!-- Bundle configuration to read values from properties file -->
+
+<import resource="classpath:META-INF/spf/spf.xml" />
+
+<context:annotation-config />
+	   
+        <bean id="STJDemoService" class="com.ge.dsp.bf.spf.factory.SPFFactory" factory-method="newEndpoint">
+         <constructor-arg value="com.ge.app.demo.STJDemo"/>
+           <property name="implementationBean" ref="stjdemoimpl"/>
+           <property name="defaultBindings">
+            <list>
+                <bean
+                    class="com.ge.dsp.bf.spf.serviceregistry.bindings.helper.RestServiceBindingHelper">
+                </bean>
+            </list>
+        </property>
+     </bean>
+     
+      <bean id="stjdemoimpl" class="com.ge.app.demo.STJDemoImpl" />
+       
+</beans>
