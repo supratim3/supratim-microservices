@@ -1,6 +1,3 @@
 this file was added in dev branch
-<<<<<<< HEAD
 this line is added in master branch
-=======
 This line is addded in dev branch
->>>>>>> development
