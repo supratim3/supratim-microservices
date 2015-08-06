@@ -4,7 +4,7 @@ git clone <<project https url>>
 
 git status - tells status  with local repo
 
-git add <<new file name>> - moves file to staging area
+git add <<file name>> - moves file to staging area
 
 git commit -m "<<msg>>" - file moved from staging are to local repo
 
@@ -12,6 +12,15 @@ git branch -v - shows current branch name
 
 git config -l - list all configuration details
 
-git push origin development 
+git push origin development  - pushes local repo changes to remote repo
 
-git pull origin development
+git pull origin development - takes latest from remote repo to local repo
+
+git config --global -l - shows user details
+
+git config --global user.name "<<Your Name>>"
+
+git config --global user.email <<Your email>>
+
+gitk - graphical representation
+
