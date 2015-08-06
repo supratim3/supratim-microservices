@@ -24,3 +24,6 @@ git config --global user.email <<Your email>>
 
 gitk - graphical representation
 
+git commit -am "<<msg>>" - both add and commit together
+
+git pull --rebase origin development - to get latest first, linear commit instead of merge commit 
