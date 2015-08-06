@@ -1,0 +1,5 @@
+Learning Demo commands...
+
+git clone <<project https url>>
+
+git status - tells status  with repo
