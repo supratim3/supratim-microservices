@@ -5,7 +5,7 @@ this is my first file
 
 1st commit
 
-
+linear change
 this is my first test file in git
 
  1st commit
