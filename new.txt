@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 this is my first test file in git
+=======
+ 1st commit
+>>>>>>> 14d58e3854262ed847b65cb63087e9c0df2a30bc
