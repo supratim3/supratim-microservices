@@ -2,4 +2,16 @@ Learning Demo commands...
 
 git clone <<project https url>>
 
-git status - tells status  with repo
+git status - tells status  with local repo
+
+git add <<new file name>> - moves file to staging area
+
+git commit -m "<<msg>>" - file moved from staging are to local repo
+
+git branch -v - shows current branch name
+
+git config -l - list all configuration details
+
+git push origin development 
+
+git pull origin development
